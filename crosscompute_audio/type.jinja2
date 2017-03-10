@@ -8,6 +8,9 @@
 
 {% macro render_property(request, data_item, stamp='') %}
 <div class='cc-audio'>
-<p>{{data_item.render_value()}}</p>
+<audio controls>
+<source src="{{data_item.render_value()}}" type="audio/{{data_item.format}}">
+Your browser does not support the audio element.
+</audio>
 </div>
 {% endmacro %}
