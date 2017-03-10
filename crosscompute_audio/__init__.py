@@ -5,7 +5,7 @@ from crosscompute.types import DataType
 class AudioType(DataType):
 
     suffixes = 'audio',
-    formats = 'mp3', 'mp4', 'ogg'
+    formats = 'mp3', 'ogg'
     template = 'crosscompute_audio:type.jinja2'
 
     @classmethod
